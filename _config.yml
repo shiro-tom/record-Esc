@@ -1,7 +1,7 @@
 title: "Shiraishi Record"
 description: "雨の降った日を、雨の降った日として記憶するため"
 baseurl: "" # サブディレクトリ名（例: /blog）不要なら空
-url: "https://shiro-tom.github.io" # あなたのGitHub Pages URL
+url: "https://shiro-tom.github.io/record-Esc/" # あなたのGitHub Pages URL
 
 # 投稿のURL構造
 permalink: /:categories/:title/
