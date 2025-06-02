@@ -7,19 +7,17 @@ title: "ホーム"
 <ul>
   {% for post in site.posts %}
     <li>
-      <!-- <a href="{{ post.url }}">{{ post.title }}</a> -->
        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <br>
+      <!-- カテゴリー表示 -->
+      <span class="post-categories">カテゴリ: {{ post.categories | join: ", " }}</span>
+      <br>
+      <!-- タグ表示 -->
+      <span class="post-tags">タグ: {{ post.tags | join: ", " }}</span>
     </li>
   {% else %}
     <li>投稿が見つかりません。</li>
   {% endfor %}
 </ul>
-<!-- <ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-    </li>
-  {% endfor %}
-</ul> -->
+
