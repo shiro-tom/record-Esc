@@ -8,6 +8,10 @@ permalink: /:categories/:title/
 
 # Markdown変換エンジン
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+
 
 # プラグイン（最低限）
 plugins:
