@@ -22,6 +22,17 @@ header p {
   margin: 0.2rem 0 0;
 }
 
+header a {
+  color: #222; 
+  text-decoration: none; 
+}
+
+header a:hover {
+  color: #444; 
+  text-decoration: underline; 
+}
+
+
 main {
   max-width: 800px;
   margin: 2rem auto;
