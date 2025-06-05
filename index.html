@@ -3,6 +3,20 @@ layout: default
 title: "ホーム"
 ---
 
+
+<h1>タグ一覧</h1>
+<ul>
+  {% assign all_tags = site.tags %}
+  {% for tag in all_tags %}
+    {% assign tag_name = tag[0] %}
+    <li>
+      <a href="{{ '/tags/' | append: tag_name | uri_escape | append: '/' | relative_url }}">
+        {{ tag_name }} ({{ tag[1].size }})
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
 <h2>最新の投稿</h2>
 <ul>
   {% for post in site.posts %}
