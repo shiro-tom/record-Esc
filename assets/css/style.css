@@ -94,3 +94,44 @@ article h3 {
 }
 
 
+/* 中央揃えと最大幅設定 */
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+
+/* タグ一覧 */
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 2em;
+}
+.tag-list li {
+  display: inline-block;
+  margin: 0.3em 0.6em;
+}
+
+/* 投稿グリッド */
+.post-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+/* 投稿アイテム */
+.post-item {
+  flex: 1 1 45%; /* 2列に並ぶ */
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-sizing: border-box;
+  text-align: left;
+  max-width: 350px;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+}
+
+
+
