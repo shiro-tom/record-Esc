@@ -4,7 +4,7 @@ title: "ホーム"
 ---
 
 <div class="home-container">
-<h1>タグ一覧</h1>
+<h1>Tag Archive</h1>
 <ul class="tag-cloud-list">
   {% assign all_tags = site.tags %}
   {% for tag in all_tags %}
@@ -17,37 +17,18 @@ title: "ホーム"
   {% endfor %}
 </ul>
 
-   <h2>最新の投稿</h2>
+   <h2>Posts</h2>
   <div class="post-grid">
     {% for post in site.posts %}
       <div class="post-item">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span><br>
-        <span class="post-categories">カテゴリ: {{ post.categories | join: ", " }}</span><br>
-        <span class="post-tags">タグ: {{ post.tags | join: ", " }}</span>
+        <span class="post-tags">Tag: {{ post.tags | join: ", " }}</span>
       </div>
     {% else %}
       <p>投稿が見つかりません。</p>
     {% endfor %}
   </div>
-
-<!-- <h2>最新の投稿</h2>
-<ul>
-  {% for post in site.posts %}
-    <li>
-       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-      <br>
-      <!-- カテゴリー表示 -->
-      <span class="post-categories">カテゴリ: {{ post.categories | join: ", " }}</span>
-      <br>
-      <!-- タグ表示 -->
-      <span class="post-tags">タグ: {{ post.tags | join: ", " }}</span>
-    </li>
-  {% else %}
-    <li>投稿が見つかりません。</li>
-  {% endfor %}
-</ul> -->
 </div>
 
 
