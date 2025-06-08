@@ -134,4 +134,45 @@ article h3 {
 }
 
 
+/* タグクラウド風ボタン */
+.tag-cloud-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 2em 0;
+  gap: 0.5em;
+}
+
+.tag-cloud-list li {
+  margin: 0;
+}
+
+.tag-button {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.95em;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.tag-button:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.tag-count {
+  font-size: 0.8em;
+  opacity: 0.6;
+  margin-left: 0.3em;
+}
+
+
+
 
