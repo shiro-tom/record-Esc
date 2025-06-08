@@ -5,14 +5,14 @@ title: "ホーム"
 
 <div class="home-container">
 <h1>タグ一覧</h1>
-<ul>
+<ul class="tag-cloud-list">
   {% assign all_tags = site.tags %}
   {% for tag in all_tags %}
     {% assign tag_name = tag[0] %}
     <li>
-      <a href="{{ '/tags/' | append: tag_name | uri_escape | append: '/' | relative_url }}">
-        {{ tag_name }} ({{ tag[1].size }})
-      </a>
+        <a class="tag-button" href="{{ site.baseurl }}/tags/{{ tag_name | uri_escape }}/">
+          {{ tag_name }} <span class="tag-count">({{ tag[1].size }})</span>
+        </a>
     </li>
   {% endfor %}
 </ul>
